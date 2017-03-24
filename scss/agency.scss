@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-xl {
-    @include button-variant(white, $theme-primary, $theme-primary);
+    @include button-variant(#9a5f2b, $theme-primary, $theme-primary);
     @include heading-font;
     font-weight: 700;
     border-radius: 3px;
