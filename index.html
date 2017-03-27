@@ -44,7 +44,7 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a href="#page-top"><img style="height: 50px; width: 50px; margin: 5px 15px; " src="img/header_logo.png"></a>
-                <span style="color: #fff;">+375 (29) 564-76-13</span>
+                <span style="color: #fff;">+375 (29) 719-14-44</span>
                 <span>&nbsp;</span>
                 <span style="color: #fff;">+375 (25) 912-65-81</span>
             </div>
@@ -83,7 +83,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Кредиты населению</div>
                 <div class="intro-heading" style="line-height: 1.3em">Взять кредит с плохой кредитной историей в Минске </div>
-                <a href="#about" class="page-scroll btn btn-xl">Подробнее</a>
+                <button type="button" class="page-scroll btn btn-xl" data-toggle="modal" data-target="#exampleModal">Отправить заявку</button>
             </div>
         </div>
     </header>
@@ -414,7 +414,7 @@
                                    <h2>
                                        Телефон:
                                    </h2>
-                                    <h3 class="text-center">+375 (29) 564-76-13</h3>
+                                    <h3 class="text-center">+375 (29) 719-14-44</h3>
                                     <h3 class="text-center">+375 (25) 912-65-81</h3>
                                     <h2>e-mail: </h2>
                                     <h3 class="text-center"><a href="info@site.info">info@site.info</a></h3>
@@ -660,6 +660,69 @@
         </div>
     </div>
 
+    <!-- Modal Кредиты -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="float: left" id="exampleModalLabel">Оформить заявку на кредит</h5>
+                    <button id="closeModal-1" type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        style="background: #fed136;
+                                        color: #b9801e;
+                                        opacity: 1;
+                                        border-radius: 50px;
+                                        width: 25px;
+                                        height: 25px;
+                                        text-shadow: none;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form name="sentMessage" id="contactFormModal" novalidate>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="ФИО *" id="nameModal" required data-validation-required-message="Пожалуйста, введите ваше имя">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="e-mail *" id="emailModal">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control" placeholder="Номер телефона *" id="phoneModal" required data-validation-required-message="Пожалуйста, проверьте введенный номер">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" placeholder="Желаемая сумма *" id="creditModal" required data-validation-required-message="Пожалуйста, проверьте введенную сумму">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label style="opacity: 0.4; font-weight: 400;" for="messageModal">В заявке указать информацию по кредитной истории. Есть ли действующие кредиты сколько платеж по ним. Есть ли рассрочки или карта халва.</label>
+                                            <textarea class="form-control" placeholder="Сообщение *" id="messageModal" required data-validation-required-message="Пожалуйста, введите ваше сообщение"></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="col-lg-12 text-center">
+                                            <div id="successModal"></div>
+                                            <button type="submit" class="btn btn-xl">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="modal-footer">-->
+                    <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                    <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -672,10 +735,21 @@
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+    <script src="js/credits.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
 
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+    <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>-->
+
+
+
 </body>
+
+
+
 
 </html>
