@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -80,10 +81,46 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Кредиты населению</div>
-                <div class="intro-heading" style="line-height: 1.3em">Взять кредит с плохой кредитной историей в Минске </div>
-                <button type="button" class="page-scroll btn btn-xl" data-toggle="modal" data-target="#exampleModal">Отправить заявку</button>
+            <div class="intro-text row">
+                <div class="intro-lead-in" style="margin-bottom: 6%">Кредиты населению</div>
+                <div class="col-md-6">
+                    <div class="intro-heading" style="line-height: 1.3em">Взять кредит с плохой кредитной историей в Минске </div>
+                </div>
+                <div class="col-md-offset-1 col-md-5">
+                    <form name="sentMessage" id="contactFormModal" novalidate>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="ФИО *" id="nameModal" required data-validation-required-message="Пожалуйста, введите ваше имя">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="e-mail *" id="emailModal">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Номер телефона *" id="phoneModal" required data-validation-required-message="Пожалуйста, проверьте введенный номер">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Желаемая сумма *" id="creditModal" required data-validation-required-message="Пожалуйста, проверьте введенную сумму">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label style="opacity: 0.7; font-weight: 400;" for="messageModal">В заявке указать информацию по кредитной истории. Есть ли действующие кредиты сколько платеж по ним. Есть ли рассрочки или карта халва.</label>
+                                    <textarea class="form-control" placeholder="Сообщение *" id="messageModal" required data-validation-required-message="Пожалуйста, введите ваше сообщение"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="successModal"></div>
+                                    <button type="submit" class="btn btn-xl">Отправить Заявку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--<button type="button" class="page-scroll btn btn-xl" data-toggle="modal" data-target="#exampleModal">Отправить заявку</button>-->
             </div>
         </div>
     </header>
@@ -93,34 +130,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Наш сервис</h2>
+                    <h3 class="section-subheading text-muted">почему мы это делаем</h3>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-bomb fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Условия</h4>
+                    <p class="text-muted">Наша компания на рынке зарекомендовала себя среди широкой аудитории. Поэтому у нас есть возможность предоставить самые выгодные условия в РБ.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-money fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Услуги</h4>
+                    <p class="text-muted">Наша компания гордится своей работой. Мы стараемся для вас и оказываем помощь в получении кредитов и займов.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Сроки</h4>
+                    <p class="text-muted">Как известно время - деньги. Но и времени и денег всегда не хватает. Мы же делаем возможным получение денег в самые короткие сроки.</p>
                 </div>
             </div>
         </div>
@@ -680,38 +717,38 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-lg-12">
-                            <form name="sentMessage" id="contactFormModal" novalidate>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="ФИО *" id="nameModal" required data-validation-required-message="Пожалуйста, введите ваше имя">
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="e-mail *" id="emailModal">
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="tel" class="form-control" placeholder="Номер телефона *" id="phoneModal" required data-validation-required-message="Пожалуйста, проверьте введенный номер">
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="number" class="form-control" placeholder="Желаемая сумма *" id="creditModal" required data-validation-required-message="Пожалуйста, проверьте введенную сумму">
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="form-group">
-                                            <label style="opacity: 0.4; font-weight: 400;" for="messageModal">В заявке указать информацию по кредитной истории. Есть ли действующие кредиты сколько платеж по ним. Есть ли рассрочки или карта халва.</label>
-                                            <textarea class="form-control" placeholder="Сообщение *" id="messageModal" required data-validation-required-message="Пожалуйста, введите ваше сообщение"></textarea>
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="col-lg-12 text-center">
-                                            <div id="successModal"></div>
-                                            <button type="submit" class="btn btn-xl">Отправить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                            <!--<form name="sentMessage" id="contactFormModal" novalidate>-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-md-12">-->
+                                        <!--<div class="form-group">-->
+                                            <!--<input type="text" class="form-control" placeholder="ФИО *" id="nameModal" required data-validation-required-message="Пожалуйста, введите ваше имя">-->
+                                            <!--<p class="help-block text-danger"></p>-->
+                                        <!--</div>-->
+                                        <!--<div class="form-group">-->
+                                            <!--<input type="email" class="form-control" placeholder="e-mail *" id="emailModal">-->
+                                            <!--<p class="help-block text-danger"></p>-->
+                                        <!--</div>-->
+                                        <!--<div class="form-group">-->
+                                            <!--<input type="tel" class="form-control" placeholder="Номер телефона *" id="phoneModal" required data-validation-required-message="Пожалуйста, проверьте введенный номер">-->
+                                            <!--<p class="help-block text-danger"></p>-->
+                                        <!--</div>-->
+                                        <!--<div class="form-group">-->
+                                            <!--<input type="number" class="form-control" placeholder="Желаемая сумма *" id="creditModal" required data-validation-required-message="Пожалуйста, проверьте введенную сумму">-->
+                                            <!--<p class="help-block text-danger"></p>-->
+                                        <!--</div>-->
+                                        <!--<div class="form-group">-->
+                                            <!--<label style="opacity: 0.4; font-weight: 400;" for="messageModal">В заявке указать информацию по кредитной истории. Есть ли действующие кредиты сколько платеж по ним. Есть ли рассрочки или карта халва.</label>-->
+                                            <!--<textarea class="form-control" placeholder="Сообщение *" id="messageModal" required data-validation-required-message="Пожалуйста, введите ваше сообщение"></textarea>-->
+                                            <!--<p class="help-block text-danger"></p>-->
+                                        <!--</div>-->
+                                        <!--<div class="clearfix"></div>-->
+                                        <!--<div class="col-lg-12 text-center">-->
+                                            <!--<div id="successModal"></div>-->
+                                            <!--<button type="submit" class="btn btn-xl">Отправить</button>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</form>-->
                         </div>
                     </div>
                 </div>
