@@ -43,7 +43,8 @@ $(function() {
 
                     //clear all fields
                     $('#contactFormModal').trigger("reset");
-                    $('#closeModal-1').click();
+                    // $('#closeModal-1').click();
+                    alert('Ваш запрос успешно отправлен!!!')
                 },
                 error: function() {
                     // Fail message
