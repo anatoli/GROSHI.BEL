@@ -13,8 +13,10 @@ $(function() {
             var nameModal = $("input#nameModal").val();
             var emailModal = $("input#emailModal").val();
             var phoneModal = $("input#phoneModal").val();
+            var myMoney = $("input#myMoney").val();
+            var SumPay = $("input#SumPay").val();
             var creditModal = $("input#creditModal").val();
-            var messageModal = $("textarea#messageModal").val();
+            // var messageModal = $("textarea#messageModal").val();
             var firstName = nameModal; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -27,8 +29,10 @@ $(function() {
                     nameModal: nameModal,
                     phoneModal: phoneModal,
                     emailModal: emailModal,
+                    myMoney: creditModal,
+                    sumPay: creditModal,
                     creditModal: creditModal,
-                    messageModal: messageModal
+                    // messageModal: messageModal
                 },
                 cache: false,
                 success: function() {

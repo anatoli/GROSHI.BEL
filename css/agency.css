@@ -13,6 +13,9 @@ body {
 .text-primary {
   color: #fed136;
 }
+text-primary-color {
+  color: #0a2973 !important;
+}
 p {
   font-size: 14px;
   line-height: 1.75;
@@ -218,7 +221,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
+    background-color: RGBA(10, 41,115, 1);;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -230,6 +233,8 @@ header {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
+  background-color: #7190da;
+  background-blend-mode: multiply;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -540,7 +545,7 @@ section h3.section-subheading {
 }
 .team-member img {
   margin: 0 auto;
-  border: 7px solid white;
+  border: 7px solid #0a2973;
 }
 .team-member h4 {
   margin-top: 25px;
@@ -554,7 +559,7 @@ aside.clients img {
   margin: 50px auto;
 }
 section#contact {
-  background-color: #222222;
+  background-color: #0a2973;
   background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
